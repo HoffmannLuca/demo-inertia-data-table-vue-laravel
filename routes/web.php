@@ -7,7 +7,7 @@ use Inertia\Inertia;
 
 Route::get('/', function(){
     return Inertia::render('Demo', [
-        'users' => User::all(),
+        'users' => User::dataTable('users'),
     ]);
 })->name('demo');
 

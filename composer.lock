@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb76c247eaf76ac280da73dc2bbc00e1",
+    "content-hash": "b2452a8e52cf1c64ff5d02c34d0a3c6e",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -3762,6 +3762,53 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.2"
             },
             "time": "2025-12-14T04:43:48+00:00"
+        },
+        {
+            "name": "starter-solutions/inertia-data-table",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Starter-Solutions/inertia-data-table-laravel.git",
+                "reference": "7da0672e71d4bd5c03e88b2cb3c6876bf131ed6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Starter-Solutions/inertia-data-table-laravel/zipball/7da0672e71d4bd5c03e88b2cb3c6876bf131ed6c",
+                "reference": "7da0672e71d4bd5c03e88b2cb3c6876bf131ed6c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0|^12.0",
+                "illuminate/pagination": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "inertiajs/inertia-laravel": "^2.0",
+                "php": "^8.2"
+            },
+            "suggest": {
+                "@starter-solutions/inertia-data-table-vue": "Frontend components for Starter Solutions Inertia Data Table"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "StarterSolutions\\InertiaDataTable\\InertiaDataTableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "StarterSolutions\\InertiaDataTable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel side of Starter Solutions Inertia Data Table",
+            "support": {
+                "source": "https://github.com/Starter-Solutions/inertia-data-table-laravel/tree/0.2.1"
+            },
+            "time": "2026-03-07T17:27:14+00:00"
         },
         {
             "name": "symfony/clock",
