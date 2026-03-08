@@ -11,6 +11,7 @@ const table = useDataTable(props.tableKey);
 
 <template>
     <div>
+        <h2>Table Key: <span class="font-bold">[{{ props.tableKey }}]</span></h2>
         <div class="overflow-x-auto rounded-xl p-4">
             <div class="grid auto-rows-min gap-4 md:grid-cols-3">
                 <div

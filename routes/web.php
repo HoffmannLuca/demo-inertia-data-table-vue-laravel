@@ -1,13 +1,15 @@
 <?php
 
 use App\Models\User;
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Inertia\Inertia;
 
 Route::get('/', function(){
     return Inertia::render('Demo', [
-        'users' => User::dataTable('users'),
+        'usersWrapped' => JsonResource::collection(User::dataTable('usersWrapped')),
+        'usersFlat' => User::dataTable('usersFlat'),
     ]);
 })->name('demo');
 

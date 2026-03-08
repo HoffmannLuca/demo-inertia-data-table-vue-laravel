@@ -7,6 +7,7 @@ import InertiaDataTable from '@/components/InertiaDataTable.vue';
     <Head title="Demo" />
 
     <div id="demo" class="flex h-full gap-2">
-        <InertiaDataTable tableKey="users" />
+        <InertiaDataTable tableKey="usersWrapped" />
+        <InertiaDataTable tableKey="usersFlat" />
     </div>
 </template>
