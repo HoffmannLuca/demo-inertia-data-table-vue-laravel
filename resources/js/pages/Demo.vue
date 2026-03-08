@@ -27,10 +27,15 @@ import PlaceholderPattern from '@/components/PlaceholderPattern.vue';
                     <PlaceholderPattern />
                 </div>
             </div>
+        </div>
+
+        <div
+            class="flex h-full flex-1 flex-col gap-4 overflow-x-auto rounded-xl p-4"
+        >
             <div
-                class="relative min-h-screen flex-1 rounded-xl border border-sidebar-border/70 md:min-h-min dark:border-sidebar-border"
+                class="p-2 bg-accent rounded-xl border border-sidebar-border/70 dark:border-sidebar-border"
             >
-                <PlaceholderPattern />
+                <pre>"data":{{ $page.props.users }}</pre>
             </div>
         </div>
     </div>

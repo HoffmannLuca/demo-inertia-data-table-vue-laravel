@@ -6,7 +6,9 @@ use Laravel\Fortify\Features;
 use Inertia\Inertia;
 
 Route::get('/', function(){
-    return Inertia::render('Demo');
+    return Inertia::render('Demo', [
+        'users' => User::all(),
+    ]);
 })->name('demo');
 
 // Route::inertia('/', 'Welcome', [
