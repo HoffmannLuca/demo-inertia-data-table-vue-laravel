@@ -8,8 +8,8 @@ use Inertia\Inertia;
 
 Route::get('/', function(){
     return Inertia::render('Demo', [
-        'usersWrapped' => JsonResource::collection(User::dataTable('usersWrapped')),
-        'usersFlat' => User::dataTable('usersFlat'),
+        'usersWrapped' => JsonResource::collection(User::dataTable('usersWrapped', columns: ['id', 'name', 'email'])),
+        'usersFlat' => User::dataTable('usersFlat', columns: ['id', 'name', 'email']),
     ]);
 })->name('demo');
 
