@@ -34,6 +34,7 @@
     },
     "dependencies": {
         "@inertiajs/vue3": "^2.3.7",
+        "@starter-solutions/inertia-data-table-vue": "^0.3.1",
         "@vueuse/core": "^12.8.2",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
